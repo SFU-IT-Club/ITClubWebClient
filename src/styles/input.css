@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+:root {
+    --text-primary-dark-blue: #f1960e;
+}
+
+@layer utilities {
+    .testing {
+        @apply text-3xl font-bold underline text-[var(--text-primary-dark-blue)];
+    }
+}
