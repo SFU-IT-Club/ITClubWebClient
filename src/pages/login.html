@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link href="../styles/output.css" rel="stylesheet" />
+  </head>
+  <body
+    class="flex items-center justify-center min-h-screen bg-gradient-to-b from-[#DA283F] to-[#5a030efa]"
+  >
+    <div class="flex flex-col items-center text-center w-full max-w-sm mt-20 mb-40">
+      <!-- Logo -->
+      <div class="mb-6">
+        <img class="w-32 h-40 mb-10" src="../images/logo.png" alt="Logo" />
+      </div>
+
+      <!-- Sign In Form -->
+      <div class="w-80 flex flex-col gap-4">
+        <form action="" method="POST" class="space-y-4">
+          <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            class="inputTag">
+
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            class="inputTag"/>
+
+          <!-- Register & Sign In -->
+        </form>
+        <div class="w-80 flex flex-row justify-end items-center gap-5">
+          <a href="#" class="text-white text-sm underline">Register?</a>
+          <button
+            type="submit"
+            class="bg-black text-white px-4 py-2 rounded-lg"
+          >
+            Sign in
+          </button>
+        </div>
+      </div>
+
+      <!-- Social Login -->
+      <div class="mt-6 flex space-x-4">
+        <img src="../images/github-icon.png" alt="GitHub" class="w-10 h-10" />
+        <img src="../images/google-icon.png" alt="Google" class="w-10 h-10" />
+      </div>
+    </div>
+  </body>
+</html>
