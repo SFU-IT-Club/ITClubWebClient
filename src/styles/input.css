@@ -1,11 +1,11 @@
 @import "tailwindcss";
-
 :root {
-    --text-primary-dark-blue: #f1960e;
+  --text-primary-dark-blue: #f1960e;
 }
-
 @layer utilities {
-    .testing {
-        @apply text-3xl font-bold underline text-[var(--text-primary-dark-blue)];
-    }
+  .inputTag{
+    @apply mb-8 w-80 px-4 py-2 rounded-lg border text-black border-gray-300 focus:outline-none focus:ring-2 bg-white;
+         
+  }
+  
 }
