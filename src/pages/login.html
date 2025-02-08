@@ -7,9 +7,9 @@
     <link href="../styles/output.css" rel="stylesheet" />
   </head>
   <body
-    class="bg-red-700 flex flex-col items-center lg:bg-gradient-to-r from-[#ffffff] to-[#DA283F]">
+    class="bg-red-700 flex flex-col items-center lg:bg-gradient-to-r from-[#ffffff] to-[#DA283F] lg:justify-center min-h-screen">
     <h1 class="hidden lg:font-medium text-6xl lg:inline">Sign In</h1>
-    <div class= "flex flex-col items-center text-center w-full h-full mt-20 mb-40 lg:flex-row lg:justify-center lg:gap-40">
+    <div class= "flex flex-col items-center text-center w-full h-full mt-20 mb-40 lg:flex-row-reverse lg:justify-center lg:gap-40">
      
       <!-- Logo -->
       <div class="h-50 lg:w-50">
@@ -19,7 +19,7 @@
       <!-- Sign In Form -->
        
       <div class="h-50 w-80 flex flex-col lg:w-50">
-        <form class="flex flex-col align-middle justify-center" action="" method="POST" class="space-y-4">
+        <form id="login_form" class="flex flex-col align-middle justify-center" action="" method="POST" class="space-y-4">
           <input
             type="email"
             id="email"
@@ -33,7 +33,6 @@
             class="inputTag"/>
 
           <!-- Register & Sign In -->
-        </form>
         <div class="w-80 flex flex-row justify-end items-center gap-5">
           <a href="#" class="text-white text-sm underline">Register?</a>
           <button
@@ -42,6 +41,7 @@
             Sign in 
           </button>
         </div>
+        </form>
       </div>
 
       <!-- Social Login -->
@@ -51,4 +51,5 @@
       </div>
     </div>
   </body>
+  <script src="../scripts/login.js"></script>
 </html>
